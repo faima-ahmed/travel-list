@@ -95,6 +95,18 @@ function PackingList({items, onDeleteItem, onToggleItem}) {
           <Item item={item} onDeleteItem={onDeleteItem} onToggleItem={onToggleItem} key={item.id} />
         ))}
       </ul>
+
+      <div className="actions">
+        <select>
+          <option value="input">
+            Sort by nput order
+          </option>
+          <option value="description">Sort by description</option>
+          <option value="packed">
+            Sort by packed status
+          </option>
+        </select>
+      </div>
     </div>
   );
 }
