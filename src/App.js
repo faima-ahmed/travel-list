@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Logo from "./Logo";
 
 const initialItems = [
   { id: 1, description: "Passports", quantity: 2, packed: false },
@@ -44,10 +45,6 @@ function handleClearList(){
       <Stats items={items}/>
     </div>
   );
-}
-
-function Logo() {
-  return <h1>🌴 Far Away 👜</h1>;
 }
 
 function Form({onAddItems}) {
