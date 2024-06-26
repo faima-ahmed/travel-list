@@ -12,6 +12,7 @@ export default function App() {
 
   function handleAddItem(item){
     setItems ((items)=>[...items, item]);
+    
 }
  
 function handleDeleteItem(id){
